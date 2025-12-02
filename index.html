@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Thoughts & Meanings</title>
+  <style>
+    :root{
+      --bg:#0f172a; --card:#0b1220; --accent:#7c3aed; --glass:rgba(255,255,255,0.04); --muted:#93c5fd;
+      font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;min-height:100vh;background:linear-gradient(180deg,#071029 0%, #071a2b 60%);color:#e6eef8}
+    .wrap{max-width:1000px;margin:48px auto;padding:20px}
+    header{display:flex;align-items:center;gap:14px;margin-bottom:18px}
+    .logo{width:46px;height:46px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#06b6d4);display:flex;align-items:center;justify-content:center;font-weight:700;color:white}
+    h1{font-size:20px;margin:0}
+    p.lead{margin:4px 0 0;color:#bcd7ff}
+
+    .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:20px}
+    .card{background:var(--card);border-radius:12px;padding:18px;border:1px solid var(--glass);box-shadow:0 8px 30px rgba(2,6,23,0.6)}
+    blockquote{margin:0 0 12px 0;padding:0;font-weight:700;font-size:16px;color:#fff}
+    .author{font-size:13px;color:var(--muted);margin-bottom:10px}
+    .meaning{font-size:14px;color:#cfe8ff;line-height:1.45}
+    .tag{display:inline-block;margin-top:12px;padding:6px 10px;border-radius:999px;background:rgba(124,58,237,0.12);color:var(--accent);font-weight:600;font-size:13px}
+
+    footer{margin-top:20px;color:#9fb8e6;font-size:13px}
+
+    @media (max-width:740px){
+      .grid{grid-template-columns:1fr}
+    }
+
+    /* tiny helpers */
+    .muted{color:#9fb8e6}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo">T</div>
+      <div>
+        <h1>Thoughts — HTML &amp; CSS cards</h1>
+        <p class="lead">Short reflections and plain-language meanings. Use these as prompts, bookmarks, or small UI cards.</p>
+      </div>
+    </header>
+
+    <main class="grid">
+      <article class="card">
+        <blockquote>“Progress, not perfection.”</blockquote>
+        <div class="author">— short motto</div>
+        <div class="meaning">Focus on steady improvement. Small, consistent steps matter more than waiting to get everything perfectly right before you start.</div>
+        <div class="tag">Actionable</div>
+      </article>
+
+      <article class="card">
+        <blockquote>“Curiosity fuels growth.”</blockquote>
+        <div class="author">— insight</div>
+        <div class="meaning">Asking questions and exploring unknowns expands your skills and perspective. Curiosity turns obstacles into learning moments.</div>
+        <div class="tag">Mindset</div>
+      </article>
+
+      <article class="card">
+        <blockquote>“Boundaries create freedom.”</blockquote>
+        <div class="author">— reminder</div>
+        <div class="meaning">Saying no protects your time and energy. Clear limits let you focus on what matters and do it better.</div>
+        <div class="tag">Balance</div>
+      </article>
+
+      <article class="card">
+        <blockquote>“Fail fast — learn faster.”</blockquote>
+        <div class="author">— product wisdom</div>
+        <div class="meaning">Quick experiments expose what doesn't work so you can adjust. Speed of learning beats clinging to ideas that don't scale.</div>
+        <div class="tag">Growth</div>
+      </article>
+
+      <article class="card">
+        <blockquote>“Kindness is strength.”</blockquote>
+        <div class="author">— human truth</div>
+        <div class="meaning">Being empathetic and generous doesn't make you weak — it builds trust, better relationships, and resilience.</div>
+        <div class="tag">Character</div>
+      </article>
+
+      <article class="card">
+        <blockquote>“Simplify to amplify.”</blockquote>
+        <div class="author">— design principle</div>
+        <div class="meaning">Remove noise and complexity so the important parts are louder. Simpler systems are easier to use, maintain, and scale.</div>
+        <div class="tag">Design</div>
+      </article>
+    </main>
+
+    <footer>
+      <p class="muted">Tip: copy any card into your project or change the tag colors in CSS to match your brand.</p>
+    </footer>
+  </div>
+</body>
+</html>
+
